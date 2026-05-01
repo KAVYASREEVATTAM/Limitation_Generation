@@ -1,0 +1,436 @@
+{
+  "Evaluation Design": {
+    "constraint_dimension": "Evaluation Design",
+    "rationale": "These clusters focus on limitations in how evaluations are conducted, including scope and metrics.",
+    "definition": "This category covers limitations related to the design and scope of evaluations, such as the use of limited metrics, single tasks, or narrow domains. It does NOT cover the absence of human evaluation or sample size limitations.",
+    "n_sub_clusters": 4,
+    "count": 527,
+    "pct": 17.6,
+    "fine_labels": [
+      {
+        "label": "Incomplete Evaluation Coverage",
+        "definition": "This label covers limitations where evaluations are not comprehensive enough to include all necessary models, datasets, or personas. Unlike 'Metric Limitations', this focuses on the breadth of what is evaluated rather than how it is evaluated. Evidence includes sentences like 'We could not evaluate all models.' and 'We cannot capture all possible personas a model must cater to.'",
+        "decision_rule": "Assign here if the limitation concerns the lack of comprehensive evaluation across models, datasets, or personas.",
+        "not_clause": "This label does NOT cover limitations related to the metrics themselves, such as their ability to capture nuances.",
+        "example_sentence": "Limited human evaluation",
+        "example_verified": false,
+        "count": 433
+      },
+      {
+        "label": "Metric Limitations",
+        "definition": "This label addresses issues with the evaluation metrics themselves, such as their inability to capture nuanced perspectives or the need for further investigation. Unlike 'Incomplete Evaluation Coverage', this focuses on the depth and quality of the metrics used. Evidence includes sentences like 'Inability of the consistency metric to fully capture nuanced or multifaceted perspectives.'",
+        "decision_rule": "Assign here if the limitation concerns the inadequacy or need for improvement of the evaluation metrics.",
+        "not_clause": "This label does NOT cover the breadth of evaluation, such as missing models or datasets.",
+        "example_sentence": "Possibility of improving the consistency between retrieval and generation through more robust evaluation methods",
+        "example_verified": false,
+        "count": 94
+      }
+    ]
+  },
+  "Computational Resources": {
+    "constraint_dimension": "Computational Resources",
+    "rationale": "These clusters address constraints related to computational resources and scalability.",
+    "definition": "This category includes limitations due to computational costs, resource availability, and scalability issues. It does NOT cover the efficiency of algorithms or inference speed.",
+    "n_sub_clusters": 3,
+    "count": 310,
+    "pct": 10.3,
+    "fine_labels": [
+      {
+        "label": "Computational Overhead",
+        "definition": "This constraint involves the additional computational burden introduced by certain methods or processes. Unlike Budget Constraints, it focuses on the extra processing required rather than financial limitations. Evidence includes sentences discussing increased computational overhead and additional computational steps.",
+        "decision_rule": "Assign here if the limitation concerns extra processing or computational steps required by a method.",
+        "not_clause": "This label does NOT cover financial or budgetary constraints.",
+        "example_sentence": "Computational resources are limited, as LLMs use a lot of energy.",
+        "example_verified": false,
+        "count": 147
+      },
+      {
+        "label": "Budget and Resource Constraints",
+        "definition": "This constraint involves limitations due to financial or resource availability, affecting the ability to use certain models or datasets. Unlike Computational Overhead, it focuses on financial and resource limitations rather than processing requirements. Evidence includes sentences about budget constraints and resource limitations affecting model usage.",
+        "decision_rule": "Assign here if the limitation concerns financial or resource availability impacting model or dataset usage.",
+        "not_clause": "This label does NOT cover additional computational steps or processing requirements.",
+        "example_sentence": "The paper focuses on using 7B/8B LLMs due to limited computing resources, and larger models are beyond the computational capacity.",
+        "example_verified": false,
+        "count": 163
+      }
+    ]
+  },
+  "Language Coverage": {
+    "constraint_dimension": "Language Coverage",
+    "rationale": "These clusters focus on limitations in language diversity and coverage.",
+    "definition": "This category covers limitations related to the evaluation or support of multiple languages, including dialects. It does NOT cover modality coverage or dataset diversity.",
+    "n_sub_clusters": 2,
+    "count": 190,
+    "pct": 6.3,
+    "fine_labels": [
+      {
+        "label": "Single Language Focus",
+        "definition": "This label covers limitations where research or experiments are conducted in only one language, restricting the generalizability of findings. Unlike 'Language Coverage Limitation', this label emphasizes the exclusive focus on a single language rather than the absence of multiple languages. Evidence includes sentences like 'Our experiments were done for English words only.'",
+        "decision_rule": "Assign here if the limitation concerns research or experiments conducted in only one language.",
+        "not_clause": "This label does NOT cover limitations where multiple languages are considered but not comprehensively covered.",
+        "example_sentence": "Our experiments were done for English words only.",
+        "example_verified": true,
+        "count": 46
+      },
+      {
+        "label": "Language Coverage Limitation",
+        "definition": "This label addresses the lack of support or evaluation across multiple languages, highlighting the narrow scope of language diversity. Unlike 'Single Language Focus', this label emphasizes the absence of multiple languages rather than the exclusive focus on one. Evidence includes sentences like 'The work is limited to the English language, which can limit the scope and applicability of research findings for other languages.'",
+        "decision_rule": "Assign here if the limitation concerns the lack of support or evaluation across multiple languages.",
+        "not_clause": "This label does NOT cover limitations where research is conducted exclusively in one language.",
+        "example_sentence": "The work is limited to the English language, which can limit the scope and applicability of research findings for other languages.",
+        "example_verified": true,
+        "count": 144
+      }
+    ]
+  },
+  "Generalisation Scope": {
+    "constraint_dimension": "Generalisation Scope",
+    "rationale": "These clusters deal with issues related to generalization and uncertainty in model performance.",
+    "definition": "This category includes limitations in generalizability across different data types or tasks and uncertainties in model effectiveness. It does NOT cover dataset size or diversity limitations.",
+    "n_sub_clusters": 2,
+    "count": 217,
+    "pct": 7.2,
+    "fine_labels": [
+      {
+        "label": "Limited Generalizability",
+        "definition": "This label covers limitations where the model or analysis cannot be applied to broader contexts or different domains. Unlike 'Narrow Scope Focus', this label emphasizes the inability to generalize findings beyond the specific conditions studied. Evidence includes limitations due to dataset constraints or specific task focus, such as in sentences 1 and 4.",
+        "decision_rule": "Assign here if the limitation concerns the inability to apply findings to broader contexts or different domains.",
+        "not_clause": "This label does NOT cover limitations that are about the narrowness of the task or context itself.",
+        "example_sentence": "The method encounters the generalization limitation due to the substantial computational burden associated with LLMs.",
+        "example_verified": false,
+        "count": 183
+      },
+      {
+        "label": "Narrow Scope Focus",
+        "definition": "This label addresses limitations where the analysis or model is restricted to a specific task, context, or set of conditions. Unlike 'Limited Generalizability', this label focuses on the narrowness of the task or context itself rather than the inability to generalize. Evidence includes limitations due to specific task focus or context, such as in sentences 5 and 8.",
+        "decision_rule": "Assign here if the limitation concerns the narrowness of the task, context, or conditions studied.",
+        "not_clause": "This label does NOT cover limitations that are about the inability to generalize findings beyond the studied conditions.",
+        "example_sentence": "The current approach largely limits the model's generalization ability.",
+        "example_verified": false,
+        "count": 34
+      }
+    ]
+  },
+  "Task and Application Scope": {
+    "constraint_dimension": "new: Task and Application Scope",
+    "rationale": "These clusters focus on the limitations in the scope of tasks and applications.",
+    "definition": "This category covers limitations in the range of tasks or applications considered, including assumptions and simplifications. It does NOT cover evaluation design or generalization issues.",
+    "n_sub_clusters": 2,
+    "count": 564,
+    "pct": 18.8,
+    "fine_labels": [
+      {
+        "label": "Task Scope Limitation",
+        "definition": "This label covers limitations in the range of tasks considered, such as focusing only on specific tasks like QA and summarization. Unlike 'Application Scope Limitation', this label is concerned with the types of tasks rather than the broader application context. Evidence includes sentences like 'The approach is limited to QA and summarization tasks.'",
+        "decision_rule": "Assign here if the limitation concerns the specific types of tasks included or excluded.",
+        "not_clause": "This label does NOT cover limitations related to the broader application context or domain.",
+        "example_sentence": "The approach is limited to QA and summarization tasks.",
+        "example_verified": true,
+        "count": 437
+      },
+      {
+        "label": "Application Scope Limitation",
+        "definition": "This label addresses limitations in the broader application context, such as focusing on specific domains like mobile or lacking broader scenario coverage. Unlike 'Task Scope Limitation', this label is concerned with the application domain rather than specific tasks. Evidence includes sentences like 'The work is primarily situated in the mobile domain, with desktop and webapps restricted to zero-shot domain adaptation experiments.'",
+        "decision_rule": "Assign here if the limitation concerns the broader application context or domain.",
+        "not_clause": "This label does NOT cover limitations related to specific types of tasks.",
+        "example_sentence": "The work is primarily situated in the mobile domain, with desktop and webapps restricted to zero-shot domain adaptation experiments.",
+        "example_verified": true,
+        "count": 127
+      }
+    ]
+  },
+  "Prompt and Interaction Design": {
+    "constraint_dimension": "new: Prompt and Interaction Design",
+    "rationale": "These clusters address limitations in prompt design and model interaction capabilities.",
+    "definition": "This category includes limitations related to prompt engineering, model size, and interaction capabilities. It does NOT cover computational resources or evaluation design.",
+    "n_sub_clusters": 2,
+    "count": 171,
+    "pct": 5.7,
+    "fine_labels": [
+      {
+        "label": "Parameter Size Limitation",
+        "definition": "This limitation concerns the constraints imposed by the size of the model's parameters, which can affect the model's performance and capabilities. Unlike 'Interaction Capability Limitation', this focuses on the model's internal architecture rather than its external interactions. Evidence includes the constraint of not conducting experiments on LLMs exceeding 13B parameters due to cost.",
+        "decision_rule": "Assign here if the limitation concerns the size of the model's parameters affecting its performance.",
+        "not_clause": "This label does NOT cover limitations related to interaction capabilities or prompt design.",
+        "example_sentence": "Experiments are not conducted on LLMs exceeding 13B parameters due to the great cost of training long-context LLMs.",
+        "example_verified": true,
+        "count": 64
+      },
+      {
+        "label": "Prompt Design Sensitivity",
+        "definition": "This limitation involves the sensitivity of model outputs to the specific prompts used, which can lead to variability in results. Unlike 'Parameter Size Limitation', this focuses on the variability introduced by different prompts rather than model size. Evidence includes the observation that other prompts could lead to different results in experiments.",
+        "decision_rule": "Assign here if the limitation concerns the variability of results due to different prompt designs.",
+        "not_clause": "This label does NOT cover limitations related to model size or parameter constraints.",
+        "example_sentence": "Other prompts could lead to different results in experiments, as only one prompt was tested.",
+        "example_verified": true,
+        "count": 82
+      },
+      {
+        "label": "Input Length Limitation",
+        "definition": "This limitation pertains to the constraints on the length of input data that a model can process, which can affect the completeness of the output. Unlike 'Prompt Design Sensitivity', this focuses on the input data length rather than the prompt variability. Evidence includes the limitation of summarizing long documents that exceed the model’s input limit.",
+        "decision_rule": "Assign here if the limitation concerns the maximum length of input data the model can handle.",
+        "not_clause": "This label does NOT cover limitations related to prompt variability or parameter size.",
+        "example_sentence": "For long documents that exceed the model’s input limit, the table of contents generated by the ToC generator may be incomplete, limiting the ability to summarize the document information effectively.",
+        "example_verified": true,
+        "count": 25
+      }
+    ]
+  },
+  "Bias and Representation": {
+    "constraint_dimension": "new: Bias and Representation",
+    "rationale": "These clusters focus on biases and representativeness issues in datasets and models.",
+    "definition": "This category covers limitations related to biases in training data, cultural representation, and dataset representativeness. It does NOT cover annotation quality or language coverage.",
+    "n_sub_clusters": 2,
+    "count": 508,
+    "pct": 16.9,
+    "fine_labels": [
+      {
+        "label": "Inherent Bias",
+        "definition": "This label covers biases that are deeply embedded in the dataset or model, often due to historical or systemic factors. Unlike 'Training Data Bias', this bias is not necessarily introduced during the data collection process but is a fundamental characteristic of the data or model. Evidence includes metrics dominated by features resistant to forgetting.",
+        "decision_rule": "Assign here if the limitation concerns biases that are fundamental and persistent in the dataset or model.",
+        "not_clause": "This label does NOT cover biases introduced during data collection or processing.",
+        "example_sentence": "The metrics are dominated by features that are inherently resistant to forgetting, such as common tokens and simple, everyday text.",
+        "example_verified": true,
+        "count": 200
+      },
+      {
+        "label": "Training Data Bias",
+        "definition": "This label addresses biases introduced during the data collection or annotation process. Unlike 'Inherent Bias', these biases are not fundamental but are introduced by the methods or sources used to gather data. Evidence includes biases from human annotators or specific LLM-generated questions.",
+        "decision_rule": "Assign here if the limitation concerns biases introduced during data collection or annotation.",
+        "not_clause": "This label does NOT cover biases that are fundamental to the dataset or model.",
+        "example_sentence": "Human annotators can introduce gender bias, complicating the quest for unbiased data.",
+        "example_verified": true,
+        "count": 14
+      },
+      {
+        "label": "Cultural Representation Bias",
+        "definition": "This label focuses on biases related to the representation of different cultures within datasets or models. Unlike 'Language Resource Bias', this bias pertains to cultural aspects rather than linguistic ones. Evidence includes biases in model answers filtered for toxic content.",
+        "decision_rule": "Assign here if the limitation concerns biases in cultural representation within the dataset or model.",
+        "not_clause": "This label does NOT cover biases related to language resources or linguistic representation.",
+        "example_sentence": "Potential biases in model answers: the model developers may filter out toxic or biased content, but it is still possible that some answers may reflect biases.",
+        "example_verified": true,
+        "count": 19
+      },
+      {
+        "label": "Bias Propagation Risk",
+        "definition": "This label covers the risk of biases being propagated from training data to model outputs. Unlike 'Bias Inheritance', this risk involves the active transfer of biases during model training or inference. Evidence includes the refinement process biasing topics toward pre-training knowledge.",
+        "decision_rule": "Assign here if the limitation concerns the risk of biases being transferred from data to model outputs.",
+        "not_clause": "This label does NOT cover biases that are inherited without active propagation during training.",
+        "example_sentence": "The refinement process may bias the topics toward the LLM’s pre-training knowledge",
+        "example_verified": true,
+        "count": 87
+      },
+      {
+        "label": "Dataset Representativeness Issue",
+        "definition": "This label addresses issues where datasets do not adequately represent the diversity of the real world. Unlike 'Cultural Representation Bias', this issue is broader and includes any lack of representativeness. Evidence includes potential biases due to specific LLM-generated questions.",
+        "decision_rule": "Assign here if the limitation concerns the lack of representativeness in the dataset.",
+        "not_clause": "This label does NOT cover biases specifically related to cultural representation.",
+        "example_sentence": "Potential biases in the dataset due to questions generated by a specific LLM",
+        "example_verified": true,
+        "count": 148
+      },
+      {
+        "label": "Language Resource Bias",
+        "definition": "This label focuses on biases related to the availability and quality of language resources. Unlike 'Cultural Representation Bias', this bias pertains specifically to linguistic aspects. Evidence includes biases towards more commonly used languages in datasets.",
+        "decision_rule": "Assign here if the limitation concerns biases related to language resources or linguistic representation.",
+        "not_clause": "This label does NOT cover biases related to cultural representation.",
+        "example_sentence": "The approach may not be equally effective for all languages, potentially leading to a bias towards more commonly used or better-represented languages in the dataset.",
+        "example_verified": true,
+        "count": 40
+      }
+    ]
+  },
+  "Annotation Quality": {
+    "constraint_dimension": "Annotation Quality",
+    "rationale": "This cluster focuses on limitations related to the quality and diversity of human annotations.",
+    "definition": "This category includes issues related to annotator bias, diversity, and the quality of human annotations. It does NOT cover dataset size or language coverage.",
+    "n_sub_clusters": 1,
+    "count": 42,
+    "pct": 1.4,
+    "fine_labels": [
+      {
+        "label": "Annotator Diversity",
+        "definition": "This label addresses the lack of diversity among annotators, which can lead to biased results. Unlike 'Annotator Bias', this focuses on the demographic and background diversity of annotators. Evidence includes limited ethnic diversity due to recruiting constraints.",
+        "decision_rule": "Assign here if the limitation concerns the diversity of the annotator pool.",
+        "not_clause": "This label does NOT cover biases introduced by individual annotators' perspectives.",
+        "example_sentence": "Our annotator demographics had limited ethnic diversity due to practical constraints related to the recruiting platform and our study’s focus on English-speaking participants.",
+        "example_verified": true,
+        "count": 11
+      },
+      {
+        "label": "Annotator Bias",
+        "definition": "This label covers biases introduced by the personal perspectives of annotators. Unlike 'Annotator Diversity', this focuses on the subjective biases of individual annotators. Evidence includes the potential impact of annotator bias on results.",
+        "decision_rule": "Assign here if the limitation concerns biases from individual annotators' perspectives.",
+        "not_clause": "This label does NOT cover the lack of diversity in the annotator pool.",
+        "example_sentence": "Annotator bias may affect the results.",
+        "example_verified": true,
+        "count": 5
+      },
+      {
+        "label": "Human Annotation Dependency",
+        "definition": "This label highlights the reliance on human annotations for data processing and evaluation. Unlike 'Annotation Quality', this focuses on the dependency on human input rather than the quality of that input. Evidence includes the dependency on human-annotated biases in benchmark datasets.",
+        "decision_rule": "Assign here if the limitation concerns reliance on human annotations.",
+        "not_clause": "This label does NOT cover the quality or accuracy of the annotations themselves.",
+        "example_sentence": "The work depends on human-annotated biases in benchmark datasets when assessing discussed measures.",
+        "example_verified": true,
+        "count": 7
+      },
+      {
+        "label": "Annotation Quality",
+        "definition": "This label addresses the quality and accuracy of human annotations. Unlike 'Human Annotation Dependency', this focuses on the precision and reliability of the annotations themselves. Evidence includes limitations due to the quality of human-annotated seed questions.",
+        "decision_rule": "Assign here if the limitation concerns the quality or accuracy of human annotations.",
+        "not_clause": "This label does NOT cover the reliance on human annotations for data processing.",
+        "example_sentence": "The approach is limited by the quality of the human-annotated seed questions",
+        "example_verified": true,
+        "count": 19
+      }
+    ]
+  },
+  "Data Coverage": {
+    "constraint_dimension": "Data Coverage",
+    "rationale": "These clusters address limitations in dataset size, diversity, and availability.",
+    "definition": "This category covers limitations related to the size, diversity, and availability of datasets used in evaluations. It does NOT cover language coverage or annotation quality.",
+    "n_sub_clusters": 2,
+    "count": 201,
+    "pct": 6.7,
+    "fine_labels": [
+      {
+        "label": "Single Dataset Evaluation",
+        "definition": "This limitation arises when a study relies on a single dataset for training or evaluation, which may not capture the diversity needed for generalization. Unlike 'Limited Dataset Scope', this focuses on the singularity of the dataset rather than its breadth. Evidence includes sentences like 'The model was trained and evaluated on data from a single exam with a particular proficiency distribution.'",
+        "decision_rule": "Assign here if the limitation concerns reliance on a single dataset for evaluation or training.",
+        "not_clause": "This label does NOT cover issues related to the size or scope of the dataset, which are covered under 'Limited Dataset Scope'.",
+        "example_sentence": "The experiments primarily focus on LLM inference with retrieved external documents.",
+        "example_verified": false,
+        "count": 25
+      },
+      {
+        "label": "Limited Dataset Scope",
+        "definition": "This limitation refers to datasets that are restricted in their coverage, such as being limited to specific domains or contexts. Unlike 'Single Dataset Evaluation', this focuses on the narrowness of the dataset's content. Evidence includes sentences like 'The dataset only includes five full-length KBO games, and broader validation across additional leagues, game formats, and sports is necessary.'",
+        "decision_rule": "Assign here if the limitation concerns the narrow scope or domain-specific nature of the dataset.",
+        "not_clause": "This label does NOT cover reliance on a single dataset, which is covered under 'Single Dataset Evaluation'.",
+        "example_sentence": "The detector requires a forward pass from the LLM being used, and an additional call to generate to create a rewrite.",
+        "example_verified": false,
+        "count": 154
+      },
+      {
+        "label": "Data Quality Dependence",
+        "definition": "This limitation highlights the model's performance being contingent on the quality of the input data. Unlike 'Curated Data Reliance', this focuses on the quality rather than the source of the data. Evidence includes sentences like 'The model's performance is highly dependent on the input data quality.'",
+        "decision_rule": "Assign here if the limitation concerns the dependency on high-quality input data for model performance.",
+        "not_clause": "This label does NOT cover reliance on specific curated datasets, which is covered under 'Curated Data Reliance'.",
+        "example_sentence": "The performance of SHARE is only demonstrated in the one-turn setting.",
+        "example_verified": false,
+        "count": 11
+      },
+      {
+        "label": "Curated Data Reliance",
+        "definition": "This limitation involves reliance on specially curated datasets for training or evaluation, which may not evolve or adapt over time. Unlike 'Data Quality Dependence', this focuses on the curated nature of the data rather than its quality. Evidence includes sentences like 'The current approach still relies on curated fine-tuning data, rather than self-evolving methods that learn complex function calling skills continuously leveraging RL.'",
+        "decision_rule": "Assign here if the limitation concerns reliance on curated datasets for training or evaluation.",
+        "not_clause": "This label does NOT cover issues related to the quality of the data, which is covered under 'Data Quality Dependence'.",
+        "example_sentence": "The paper does not consider supervised fine-tuning of smaller LLMs due to computational resources.",
+        "example_verified": false,
+        "count": 11
+      }
+    ]
+  },
+  "Security and Privacy": {
+    "constraint_dimension": "new: Security and Privacy",
+    "rationale": "This cluster focuses on limitations related to data security and privacy concerns.",
+    "definition": "This category includes issues related to data leakage, privacy concerns, and risks of misuse. It does NOT cover computational resources or evaluation design.",
+    "n_sub_clusters": 1,
+    "count": 70,
+    "pct": 2.3,
+    "fine_labels": [
+      {
+        "label": "Data Leakage Risk",
+        "definition": "This label covers issues where data may be unintentionally exposed or shared, leading to privacy breaches. Unlike 'Privacy Concerns', this focuses specifically on the unintended flow of data between systems or datasets. Evidence includes concerns about data leakage in evaluation metrics and benchmarks.",
+        "decision_rule": "Assign here if the limitation concerns unintended data exposure or sharing between systems or datasets.",
+        "not_clause": "This label does NOT cover general privacy concerns unrelated to data flow.",
+        "example_sentence": "The risk of data leakage.",
+        "example_verified": true,
+        "count": 8
+      },
+      {
+        "label": "Privacy Concerns",
+        "definition": "This label addresses issues related to the protection of personal or sensitive information. Unlike 'Data Leakage Risk', this focuses on the broader implications of privacy, including data handling and consent. Evidence includes risks of personal data exposure from datasets.",
+        "decision_rule": "Assign here if the limitation concerns the protection of personal or sensitive information.",
+        "not_clause": "This label does NOT cover specific data flow issues leading to leakage.",
+        "example_sentence": "There is a risk of unintended personal data exposure from the images in the dataset, despite efforts to filter out identifying information.",
+        "example_verified": true,
+        "count": 23
+      },
+      {
+        "label": "Adversarial Vulnerability",
+        "definition": "This label pertains to the susceptibility of systems to adversarial attacks, which can compromise security and integrity. Unlike 'Data Leakage Risk', this focuses on intentional attacks rather than unintentional data exposure. Evidence includes susceptibility to adversarial attacks on knowledge graphs.",
+        "decision_rule": "Assign here if the limitation concerns susceptibility to adversarial attacks.",
+        "not_clause": "This label does NOT cover unintentional data exposure or privacy concerns unrelated to attacks.",
+        "example_sentence": "The proposed approaches are susceptible to adversarial attacks on knowledge graphs.",
+        "example_verified": true,
+        "count": 23
+      },
+      {
+        "label": "Harmful Content Risk",
+        "definition": "This label involves the potential generation or presence of harmful or offensive content within systems. Unlike 'Adversarial Vulnerability', this focuses on content issues rather than security breaches. Evidence includes potential for generating harmful or offensive content in outputs.",
+        "decision_rule": "Assign here if the limitation concerns the generation or presence of harmful or offensive content.",
+        "not_clause": "This label does NOT cover security vulnerabilities unrelated to content.",
+        "example_sentence": "Potential for generating harmful or offensive content in the output solutions for the modified questions due to the nature of adversarial attack",
+        "example_verified": true,
+        "count": 16
+      }
+    ]
+  },
+  "Inference and Efficiency": {
+    "constraint_dimension": "new: Inference and Efficiency",
+    "rationale": "These clusters focus on limitations in inference speed, efficiency, and training requirements.",
+    "definition": "This category covers limitations related to inference speed, efficiency, and the need for hyperparameter optimization. It does NOT cover computational resources or evaluation design.",
+    "n_sub_clusters": 3,
+    "count": 200,
+    "pct": 6.7,
+    "fine_labels": [
+      {
+        "label": "Hyperparameter Sensitivity",
+        "definition": "This label covers limitations related to the sensitivity of model performance to hyperparameter settings. Unlike 'Hyperparameter Search Requirement', this focuses on the impact of hyperparameters rather than the need for their optimization. Evidence includes the need for further optimization of data augmentation strategies and loss function design.",
+        "decision_rule": "Assign here if the limitation concerns the impact of hyperparameter settings on model performance.",
+        "not_clause": "This label does NOT cover the need for extensive hyperparameter search or optimization processes.",
+        "example_sentence": "The model's defensive robustness and accuracy on clean data may require further optimization of data augmentation strategies and loss function design.",
+        "example_verified": true,
+        "count": 15
+      },
+      {
+        "label": "Inference Speed Limitation",
+        "definition": "This label addresses constraints related to the speed of model inference. Unlike 'Efficiency Limitation', this specifically focuses on the time taken for inference rather than overall resource efficiency. Evidence includes the relatively slow inference runtime of models.",
+        "decision_rule": "Assign here if the limitation concerns the speed at which a model can perform inference tasks.",
+        "not_clause": "This label does NOT cover general efficiency issues that are not directly related to inference speed.",
+        "example_sentence": "The model has a relatively slow inference runtime.",
+        "example_verified": true,
+        "count": 20
+      },
+      {
+        "label": "Efficiency Limitation",
+        "definition": "This label encompasses limitations in the efficiency of models, particularly in terms of resource usage and scalability. Unlike 'Inference Speed Limitation', this focuses on broader efficiency issues beyond just speed. Evidence includes the need for further optimization to make frameworks more efficient and scalable.",
+        "decision_rule": "Assign here if the limitation concerns the overall efficiency of the model, including resource usage and scalability.",
+        "not_clause": "This label does NOT cover specific issues related to the speed of inference.",
+        "example_sentence": "Further optimization is necessary to make the framework more efficient and scalable.",
+        "example_verified": true,
+        "count": 74
+      },
+      {
+        "label": "Performance Degradation",
+        "definition": "This label covers scenarios where model performance degrades under certain conditions or lacks optimization. Unlike 'Performance Disparity', this focuses on the decline in performance rather than differences between models. Evidence includes the overall performance of novel approaches remaining below optimal.",
+        "decision_rule": "Assign here if the limitation concerns a decline or suboptimal performance of the model.",
+        "not_clause": "This label does NOT cover differences in performance between different models or configurations.",
+        "example_sentence": "The overall performance of the novel approach, RESS, remains below optimal.",
+        "example_verified": true,
+        "count": 64
+      },
+      {
+        "label": "Hyperparameter Search Requirement",
+        "definition": "This label addresses the necessity for extensive hyperparameter search to achieve optimal model performance. Unlike 'Hyperparameter Sensitivity', this focuses on the process of searching for optimal settings. Evidence includes reliance on models that have not been individually optimized for tasks.",
+        "decision_rule": "Assign here if the limitation concerns the need for extensive hyperparameter search to optimize model performance.",
+        "not_clause": "This label does NOT cover the impact of specific hyperparameter settings on performance.",
+        "example_sentence": "The study relies on a pool of models that have not been individually optimized for the task they are tested on.",
+        "example_verified": true,
+        "count": 27
+      }
+    ]
+  }
+}
