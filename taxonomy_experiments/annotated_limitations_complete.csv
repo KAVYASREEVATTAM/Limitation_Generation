@@ -1,0 +1,501 @@
+limitation,CATEGORY_taxonomy,limitgen_taxonomy,confidence
+The study is not exhaustive regarding the full range of synonymous temporal constructions.,Data Coverage,Experimental Design,medium
+"The semi-synthetic, template-based approach may not fully reflect the variability found in natural language.",Language Coverage,Methodology,low
+The templates might not fully reflect spontaneous speech.,Task and Application Scope,Experimental Design,low
+The number of verb classes (157 classes for 400 videos) may not capture more nuanced actions.,Task and Application Scope,Experimental Design,low
+The gold standard accuracy might decrease when averaged across annotators with more annotations per language.,Language Coverage,Result Analysis,low
+The scope is limited to a US and English language context.,Language Coverage,Experimental Design,high
+The approach may fail to reflect non-Western gender practices.,Bias and Representation,Methodology,low
+The approach may fail for non-English language TGNB users.,Language Coverage,Methodology,low
+"The evaluation in Section 5.2 is a ""toy example"" that needs improvement.",Evaluation Design,Experimental Design,low
+The evaluation only considers representational harms.,Bias and Representation,Experimental Design,low
+The evaluation only considers creative prompts.,Task and Application Scope,Experimental Design,high
+"Other LLMs models, such as ChatGPT, were not validated as evaluators due to an unacceptable rate of false positives.",Evaluation Design,Experimental Design,medium
+Practical considerations make it difficult to control all variables in human evaluation experiments.,Evaluation Design,Experimental Design,medium
+"The single-sided MQM annotations were collected in 2023 with a different original goal, while the S×S MQM and S×S RR annotations were collected in 2024 for this project.",Data Coverage,Experimental Design,medium
+Annotators were engaged in multiple projects throughout 2024 and thus may have performed other annotation tasks in between items collected for this project.,Annotation Quality,Experimental Design,medium
+"The current work is not able to test MQM, S×S MQM, and S×S RR on a larger set of language pairs besides ZhEn and EnDe.",Language Coverage,Experimental Design,high
+It is impractical to exhaustively test all possible system pairs in the two tested language pairs.,Language Coverage,Experimental Design,low
+"The study only focuses on pairwise side-by-side annotation, and does not explore comparing more than two outputs.",Annotation Quality,Result Analysis,low
+"The study does not investigate the impact of different annotation settings on annotator backgrounds, such as crowd-sourced workers.",Annotation Quality,Experimental Design,low
+S×S MQM and S×S RR do not significantly increase the inter-annotator agreement of expert annotators.,Annotation Quality,Experimental Design,low
+"Though Infogen delivers state-of-the-art performance, there is room for improvement in accurately determining and aligning sub-charts.",Task and Application Scope,Methodology,medium
+"Our dataset, Infodat, is relatively limited in size, which might affect the generalizability of the model in diverse domains like healthcare.",Data Coverage,Experimental Design,high
+"The framework currently lacks support for customized template selection based on context, limiting its flexibility in tailoring infographics for specific user needs or varied contexts.",Task and Application Scope,Methodology,medium
+There is an inherent trade-off between the robustness and detectability of our proposed MCMARK.,Generalization Scope,Methodology,low
+Increasing the number of distribution channels can potentially enhance detectability but reduce robustness against attacks.,Security and Privacy,Methodology,low
+Our proposed MCMARK is vulnerable to attacks where an adversary may modify output tokens to disrupt the watermark detection.,Security and Privacy,Methodology,high
+"The largest model tested was LLaMA2-13B, and experiments were not extended to larger models due to time constraints.",Prompt and Interaction Design,Experimental Design,high
+"A detailed analysis of domain-specific tasks, such as biomedical or legal text, was not conducted, which might require further tuning of the frequency partitioning strategy.",Task and Application Scope,Experimental Design,high
+The computational cost of calculating the DCT could be optimized further for extremely large-scale models.,Computational Resources,Methodology,high
+The method may struggle in scenarios where the attributes to be aligned are highly complex or unsteerable.,Task and Application Scope,Methodology,medium
+MAT-STEER relies on a small set of data to create steering vectors.,Data Coverage,Experimental Design,high
+Evaluations have so far been conducted on a select set of tasks and attributes chosen to be representative of standard steering objectives.,Task and Application Scope,Experimental Design,high
+"MAT-STEER does not eliminate the risks associated with LLMs, such as bias and toxicity, entirely.",Bias and Representation,Methodology,high
+The best-performing agent attained an overall task success rate of less than 25% on both Mind2Web and VisualWebArena.,Generalization Scope,Experimental Design,high
+"There is significant room for improvement, particularly for tasks requiring long action sequences and websites with complex visual layouts.",Task and Application Scope,Other,medium
+The proposed adaptation framework may be prone to failure in certain types of new tasks/websites/domains.,Generalization Scope,Methodology,medium
+The adapted agent’s performance may be sensitive to the selected few-shot demonstrations.,Prompt and Interaction Design,Methodology,medium
+"The study does not include non-textual inputs such as figures, which are integral to many scientific papers.",Data Coverage,Experimental Design,medium
+"The study does not explore advanced RAG techniques, focusing instead on assessing the potential of LLM systems.",Task and Application Scope,Methodology,medium
+"The current benchmark covers a limited time span, which may not fully represent the evolving landscape of research in the field.",Data Coverage,Experimental Design,medium
+"The benchmark relies on an automated evaluation method, which could introduce inherent biases and affect the accuracy and reliability of the overall evaluation.",Evaluation Design,Experimental Design,high
+"The taxonomy and benchmark focus primarily on AI, and may not fully address the nuances of different scientific disciplines.",Task and Application Scope,Experimental Design,medium
+"The study's limited scope may introduce challenges and limitation types that the framework does not fully address, particularly in fields such as medicine, physics, and social sciences.",Task and Application Scope,Experimental Design,medium
+"The language sample is not sufficiently diverse to draw strong, generalizable conclusions.",Data Coverage,Experimental Design,high
+"The language sample is primarily driven by the availability of psycholinguistic datasets, which are more often representative of European languages.",Language Coverage,Experimental Design,high
+The models used are very small due to compute limitations.,Computational Resources,Methodology,high
+Training larger models may not have shown the same limits on shared representations and crosslingual transfer.,Language Coverage,Methodology,low
+Increasing the model size would likely be necessary to study successful crosslingual transfer in language pairs that are more different.,Language Coverage,Methodology,low
+"Language data contamination could be a factor, with non-English data potentially contaminated with English data.",Language Coverage,Experimental Design,low
+English contamination in the Dutch data may be present due to language use or differences in accuracy of language identification methods.,Language Coverage,Methodology,low
+The models being small may limit the generalizability of the results to larger models.,Generalization Scope,Methodology,high
+The limited compute budget restricted the number of manipulations that could be done.,Computational Resources,Other,high
+The analysis is limited to pairwise interactions and does not consider higher-order interactions.,Task and Application Scope,Methodology,high
+The analysis is limited to correlational analyses and does not investigate causal relationships.,Task and Application Scope,Methodology,high
+The analysis is currently limited to pairwise features like syntactic proximity.,Task and Application Scope,Methodology,high
+The specifics of the results might not be relevant to state-of-the-art production models due to the difference in model size.,Generalization Scope,Experimental Design,high
+The paper is limited to smaller models and has not been applied to larger models.,Generalization Scope,Experimental Design,high
+"The work focuses on short texts (no longer than 1050 tokens each), some of which do not contain complete beginnings, middles, and endings.",Data Coverage,Experimental Design,high
+The datasets are limited to texts written in English.,Language Coverage,Experimental Design,high
+"The analysis for RQ1 in Section 6 is limited to only female, male, and other/ambiguous genders.",Bias and Representation,Experimental Design,high
+The size of the dataset is relatively small due to the high cost of high-quality annotations.,Data Coverage,Experimental Design,high
+"The Reddit data used in our experiments does not represent the full spectrum of online discussions, limiting the generalizability of our results to other platforms or domains.",Generalization Scope,Experimental Design,high
+"LLMs were used extensively for data annotation, which introduces potential biases inherent in these models.",Bias and Representation,Experimental Design,high
+The overall quality and fairness of the labels may still be affected by the limitations of the LLMs themselves.,Annotation Quality,Experimental Design,high
+LLMs have the potential for bias due to the nature of their training data.,Bias and Representation,Methodology,high
+"We evaluated the textual quality of generated KPs only on AmazonQ&A, as it is the only public dataset with abundance of online community answers written by online users usable as ground truth for our automatic evaluation.",Data Coverage,Experimental Design,high
+Key points extracted from the Q&A answers might not fully be in line with viewpoints in reviews to answer questions.,Task and Application Scope,Experimental Design,medium
+Opinions in product reviews may not sufficiently cover all opinions in community answers.,Data Coverage,Experimental Design,medium
+"System prompts can greatly shape the responses and provide specific guidance on the flow of dialogue, but were not used.",Prompt and Interaction Design,Methodology,high
+RIFTS will only reflect tasks seen in WildChat due to the filtering process.,Generalization Scope,Experimental Design,high
+Tasks in RIFTS depend on the LLMs used to serve WildChat (e.g. OpenAI LLMs).,Task and Application Scope,Experimental Design,high
+Forecasters implicitly learn what tasks fail for the GPT models deployed in WildChat.,Task and Application Scope,Methodology,low
+The annotator relies on GPT4o-mini to label logs with grounding acts and is not perfect.,Annotation Quality,Experimental Design,low
+The sample size in this study is limited to 31 end users and 11 health coach experts.,Task and Application Scope,Experimental Design,low
+The study only looks at user populations with extensive chatbot experience.,Task and Application Scope,Experimental Design,low
+"All agents in this study leverage a single family of language models, Gemini.",Task and Application Scope,Experimental Design,high
+The study only focuses on a single domain of health coaching.,Generalization Scope,Experimental Design,low
+Limited dataset size and diversity,Data Coverage,Experimental Design,low
+Need for evaluating the framework on additional pragmatic phenomena such as metaphor and politeness,Task and Application Scope,Methodology,low
+Difficulty in generating relevant and non-overlapping alternative utterances,Task and Application Scope,Experimental Design,low
+Uncertainty in determining which rhetorical strategies are appropriate in a given context,Task and Application Scope,Methodology,high
+Need for a more principled approach to inducing rhetorical strategies,Task and Application Scope,Methodology,low
+Our work relies on human intuition to evaluate the novelty of the generated concepts.,Task and Application Scope,Experimental Design,low
+The model may still be subject to human bias and lack of coverage.,Bias and Representation,Methodology,low
+The concept ontology does not cover every plausible concept category in the real-world.,Task and Application Scope,Experimental Design,low
+The dataset may still exhibit some selection bias due to reliance on keyword searches and specific social media threads for data collection.,Bias and Representation,Experimental Design,high
+"The work primarily reflects Western perspectives, and therefore the dataset may not be generalizable across languages and cultures.",Language Coverage,Experimental Design,low
+"Anti-autistic and ableist speech may manifest and be perceived differently in different contexts, which is not accounted for in the dataset.",Task and Application Scope,Experimental Design,low
+"The dataset consists of sentences sourced from Reddit, which may not be representative of all online platforms or communities.",Task and Application Scope,Experimental Design,low
+"The search criteria included terms that may not exclusively target autism, such as ""r*tard"", which is a slur broadly used against people with intellectual disabilities.",Task and Application Scope,Experimental Design,low
+"The inclusion of broader search terms like ""neurodiver"" returned unrelated content, such as discussions about the NEURODIVER video game.",Data Coverage,Experimental Design,high
+"Most of the dataset's content was published in 2023, which may not be representative of ableist language used in other time periods.",Language Coverage,Experimental Design,low
+"The dataset is relatively small, which may limit its ability to capture the full range of ableist language targeting autistic individuals.",Language Coverage,Experimental Design,low
+The topic tree component is not part of MI principles and an expert MI counselor may rely on experience to suggest topics.,Task and Application Scope,Experimental Design,low
+The data-driven topic tree construction is suboptimal.,Task and Application Scope,Methodology,low
+"The framework currently relies on LLM prompting to perform state inference, topic exploration and strategy selection, which can lead to issues such as counselor responses being too lengthy and using too many questions.",Prompt and Interaction Design,Methodology,high
+"The study only focuses on MI-based counseling, and does not explore the integration of other counseling techniques, such as Cognitive Behavioral Therapy (CBT).",Task and Application Scope,Experimental Design,high
+"Scenario Applicability: Experiments were conducted on a single dataset, with minimal validation across others to confirm broader applicability.",Generalization Scope,Experimental Design,high
+Linguistic and Cultural Scope: Our focus on English dialogues may limit the applicability of USP to other languages and cultural contexts.,Language Coverage,Experimental Design,high
+Language models cannot fully replace human involvement in the survey process.,Task and Application Scope,Methodology,high
+Language models remain limited in adapting to a rapidly changing world.,Task and Application Scope,Methodology,high
+Fine-tuning a language model on distributions of human opinions may inadvertently replicate and amplify existing biases of humans.,Language Coverage,Methodology,low
+A model fine-tuned on human opinions does not necessarily align with human values and behaviors.,Task and Application Scope,Methodology,low
+A model fine-tuned on human opinions does not serve as a perfect proxy for human decision-making.,Task and Application Scope,Methodology,low
+The scope of the work is restricted to language models prompted with group-level information generating response distributions.,Language Coverage,Methodology,low
+"Survey response data remain subject to empirical variance, particularly for relatively small groups.",Data Coverage,Experimental Design,medium
+The extent to which biases affect language models—and how best to address them—remains an open question.,Bias and Representation,Methodology,high
+The finetuning approach has not explored fine-tuning with richer contextual information.,Task and Application Scope,Methodology,medium
+Incorporating additional contextual details can improve the fidelity of model-generated opinions to actual human responses.,Task and Application Scope,Methodology,low
+Sampling speed can be improved by incorporating recent work in computer vision for single step sampling in diffusion-based models.,Inference and Efficiency,Methodology,high
+Sampling speed can be improved by applying kernel or systems level optimizations.,Inference and Efficiency,Methodology,high
+Sampling speed can be improved by investigating early stopping mechanisms.,Inference and Efficiency,Methodology,high
+The model lags behind AR models on AlpacaEval and GSM8k when trained on Tulu 2 SFT data.,Generalization Scope,Experimental Design,medium
+The model is a weaker generalist model than its AR counterparts.,Generalization Scope,Methodology,high
+Data quality can be improved to close the gap between the model and AR models.,Data Coverage,Methodology,medium
+"Continued pretraining of Mistral on Dolma results in degraded performance, suggesting that the adaptation data can be improved.",Data Coverage,Experimental Design,high
+A more thorough search and tuning of hyperparameters such as the learning rate can further improve performance.,Inference and Efficiency,Methodology,high
+The model may display similar issues to autoregressive counterparts when it comes to producing toxic and biased content.,Bias and Representation,Methodology,high
+Examining how results around toxic and harmful generations of autoregressive setups transfer to diffusion models remains an open area for future investigation and improvement.,Bias and Representation,Experimental Design,high
+"The scope of the KatFish benchmark is limited to three specific genres: essays, poetry, and paper abstracts.",Task and Application Scope,Experimental Design,high
+"The study does not encompass all text types where LLM-generated content could present risks, such as news articles, social media posts, and legal documents.",Task and Application Scope,Experimental Design,high
+"The study focuses on distinguishing between fully human-written and fully LLM-generated text, and does not account for hybrid content where human- and LLM-generated text are interwoven.",Task and Application Scope,Experimental Design,high
+The performance of detection methods that rely on linguistic features is impacted by the limitations of current Korean morphological analysis tools.,Language Coverage,Methodology,high
+"The databases provided by the Bird dataset are typically large, leading to significant time consumption when executing SQL queries.",Computational Resources,Experimental Design,high
+"Resource contention among multiple processes can lead to SQL execution timeouts, causing correct predicted SQL queries to be incorrectly classified as incorrect, thereby introducing false negatives.",Evaluation Design,Experimental Design,high
+The inaccuracy in feedback signals could potentially impact DPO training.,Data Coverage,Methodology,medium
+"Relying on execution results to distinguish between correct and incorrect SQL queries can lead to false positives, resulting in potentially unreliable feedback signals for DPO training.",Task and Application Scope,Methodology,low
+The interplay between language and measurement systems and its impact on performance remains an important avenue for future research.,Language Coverage,Result Analysis,low
+"The study only investigates how well LLMs generalize across measurement systems in English, which represents a ‘best-case’ scenario.",Language Coverage,Experimental Design,low
+"LLMs are likely to mistranslate measurements more frequently and significantly in other languages, and incur higher inference costs due to tokenization into more subwords.",Language Coverage,Experimental Design,low
+The investigation only examines a selected subset of measurement systems and units.,Data Coverage,Experimental Design,high
+"There are challenges in accessing comprehensive data, especially regarding systems still actively used within marginalized groups.",Task and Application Scope,Experimental Design,low
+"There are more effective tools for retrieving facts and performing unit conversions than solely relying on LLMs, such as RAG systems or dedicated conversion tools.",Task and Application Scope,Experimental Design,low
+The benchmark is currently limited to analyzing coherence relations in single-turn discourses.,Evaluation Design,Experimental Design,low
+There is a lack of publicly available datasets that provide multi-turn image-text pairs with annotated coherence relations.,Task and Application Scope,Experimental Design,low
+The benchmark is currently limited to the English language.,Language Coverage,Experimental Design,high
+We cannot fully explain the origins or causal mechanisms of Veracity Bias.,Bias and Representation,Result Analysis,medium
+"The interplay between pretraining data, model architecture, and the emergence of biases remains unclear.",Bias and Representation,Methodology,medium
+Systematic methods to detect and characterize biases in LLMs remain limited.,Bias and Representation,Methodology,medium
+Our experiments were limited to off-policy and on-policy setups for direct preference optimization.,Task and Application Scope,Experimental Design,high
+We did not explore iterative on-policy setups due to limited computational resources.,Computational Resources,Experimental Design,high
+We conducted our experiments on relatively small models.,Prompt and Interaction Design,Methodology,high
+The scalability and generalizability of our algorithms to larger models remain to be validated.,Computational Resources,Experimental Design,medium
+"We relied on GPT-4 as the evaluation judge, which may introduce potential biases and result in less accurate or reliable judgments.",Bias and Representation,Experimental Design,high
+"The current textual narratives do not include object attributes (e.g., color, size)",Data Coverage,Experimental Design,high
+TSG Bench does not incorporate attributes in the scene graph generation process,Task and Application Scope,Methodology,high
+"TSG Bench centers on a single actor, tasks do not involve additional individuals",Task and Application Scope,Experimental Design,high
+"The study does not integrate multi-modal approaches, such as utilizing Vision-Language Models (VLMs) to derive textual narratives from images or videos",Task and Application Scope,Methodology,high
+The performance of the multi-agent system depends on the quality and completeness of the contextual data provided to each agent.,Data Coverage,Methodology,medium
+Incomplete or ambiguous data can affect decision-making accuracy.,Data Coverage,Methodology,medium
+"Scalability issues may arise as the number of agents increases, with potential challenges in coordination and computational efficiency.",Computational Resources,Experimental Design,low
+"The framework assumes agents can independently interpret context, which may be influenced by biases or lack of domain-specific knowledge.",Bias and Representation,Methodology,low
+"The generalization of the approach across different domains remains uncertain, as the tasks used are specific to certain contexts.",Generalization Scope,Methodology,low
+"The system does not integrate external knowledge, which could limit performance in dynamic or evolving scenarios.",Task and Application Scope,Result Analysis,low
+"The interpretability of multi-agent decisions remains a challenge, as the rationale behind agent interactions can be difficult to trace.",Bias and Representation,Experimental Design,low
+The dataset cannot fully capture all potential biases present in complex real-world environments.,Bias and Representation,Experimental Design,high
+The study does not quantify and compare the provider bias of different LLMs.,Bias and Representation,Experimental Design,low
+The lack of access to the specific pre-training corpus and pipeline of LLMs limits an in-depth analysis of the exact sources of provider bias.,Bias and Representation,Methodology,low
+"The estimation relies on market share reports, which is not the reflection of real training data distribution.",Data Coverage,Methodology,low
+Accurately obtaining real training data distributions to analyze and pinpoint the sources of provider bias remains an open question.,Bias and Representation,Methodology,low
+"The model is demonstrated using open-source LLMs smaller than GPT-4 Turbo, and larger models may yield better consistency.",Prompt and Interaction Design,Methodology,medium
+"The current dataset is primarily composed of Korean examples, limiting linguistic coverage.",Language Coverage,Experimental Design,high
+The pipeline has not been applied in diverse cultural and language settings for detoxification.,Language Coverage,Experimental Design,high
+"In this study, the design relies on the prior (the number of tasks and language groups), which may limit its extension to broader topics",Task and Application Scope,Methodology,medium
+This work only conducts experiments on translation tasks and does not conduct experiments on other generation or discriminative tasks,Task and Application Scope,Experimental Design,high
+Tuning neuron values for skill-level output adjustment remains unexplored,Task and Application Scope,Methodology,medium
+"The current neuron linearity and gradient analysis focuses on single-token factual prompts, limiting its application to other domains and contexts.",Generalization Scope,Experimental Design,medium
+The observed limitations of third-party annotations are based on first-party labels and third-party annotations collected from study participants.,Annotation Quality,Experimental Design,high
+First-party labels may be spurious and cannot be externally verified.,Data Coverage,Experimental Design,medium
+The inclusion of potentially spurious first-party data points may have an impact on the overall findings.,Data Coverage,Experimental Design,medium
+Some low-quality third-party annotations may still remain despite quality control measures.,Annotation Quality,Experimental Design,high
+Inconsistencies in subjective judgment cannot be entirely eliminated.,Annotation Quality,Experimental Design,high
+There is a lack of sufficient data within each demographic subgroup to conduct statistically robust analyses.,Data Coverage,Experimental Design,high
+The findings may not generalize to other demographic categorizations.,Generalization Scope,Experimental Design,high
+The findings may not generalize to broader populations.,Generalization Scope,Experimental Design,high
+The findings may not generalize to diverse cultural contexts.,Generalization Scope,Experimental Design,medium
+The findings may not generalize to different languages.,Language Coverage,Result Analysis,low
+"The synthesized speech often exhibits slight distortions, which appear to contribute to a degradation in overall quality.",Task and Application Scope,Result Analysis,low
+Inaccuracies arise in the ground-truth data because phoneme durations are inherently real numbers rather than integers.,Task and Application Scope,Experimental Design,low
+"The durations must be rounded to integer values, which subsequently degrades the quality of the synthesized speech in the temporal domain.",Generalization Scope,Result Analysis,low
+The approach employed in this study presents a trade-off between synthesis quality and computational efficiency.,Inference and Efficiency,Methodology,high
+"Deepfake Fraud: Malicious entities may exploit these models to impersonate individuals, facilitating scams, misinformation, or fraudulent activities.",Security and Privacy,Other,high
+"Fabricated Media: Synthesized audio can be used to create misleading or defamatory content, influencing public perception and spreading misinformation.",Security and Privacy,Other,high
+Privacy Violations: The unauthorized replication of voices without explicit consent raises ethical and legal concerns regarding individual privacy.,Security and Privacy,Other,high
+"Legal and Copyright Challenges: Certain voices may be subject to copyright, trademark, or publicity rights protections, potentially leading to legal disputes over their unauthorized use.",Security and Privacy,Other,high
+"The current training and evaluation are conducted in a simulation environment, which may not fully capture the complexity and uncertainty of real-world scenarios, and may lead to the sim-to-real gap.",Generalization Scope,Experimental Design,high
+The data collection pipeline requires additional computational resources due to the limitations in multimodal language models' critique capabilities.,Computational Resources,Other,high
+"The framework's scalability is currently limited by the computational costs of the judge model, which may be reduced with advancements in vision-language models and embodied self-rewarding mechanisms.",Computational Resources,Methodology,high
+"The deployment of similar systems in real-world environments may pose safety risks, particularly when handling potentially hazardous appliances, and requires comprehensive safety protocols and monitoring mechanisms.",Security and Privacy,Other,high
+It is infeasible to evaluate all over 200 jailbreak attacks within a single paper.,Evaluation Design,Experimental Design,high
+The research scope of the paper is limited to 17 representative attacks.,Task and Application Scope,Experimental Design,high
+The policies and corresponding datasets used are static and may become outdated as LLM-related policies evolve over time.,Data Coverage,Experimental Design,high
+"Questions in the same category may trigger different responses from LLMs, which is not investigated in the paper.",Data Coverage,Experimental Design,medium
+The automatic ASR evaluation method proposed is imperfect.,Evaluation Design,Methodology,high
+The approach lacks domain knowledge to properly assess the quality of jailbroken responses or compare them with harmful knowledge from other sources.,Task and Application Scope,Methodology,high
+Involving LLMs in building a forbidden dataset might introduce unknown biases.,Bias and Representation,Methodology,high
+"Many jailbreak attacks involve using other LLMs for assistance, which could also introduce biases.",Bias and Representation,Experimental Design,low
+Human annotation may still introduce some unavoidable biases.,Bias and Representation,Experimental Design,low
+Current PKT methods rely on language for supervision,Language Coverage,Methodology,low
+The underlying principles behind PKT's effectiveness remain unclear,Task and Application Scope,Experimental Design,low
+It is uncertain why a stronger Ml yields no improvement,Task and Application Scope,Result Analysis,medium
+Equipment limitations restricted experiments to models between 13B and 7B,Computational Resources,Experimental Design,high
+Experiments have not been expanded to larger-scale LLMs,Computational Resources,Experimental Design,high
+The method may not perform well for non-English tasks.,Language Coverage,Methodology,high
+The method is limited to solving problems where the answers are numerical values or entities.,Task and Application Scope,Methodology,high
+The study does not address multilingual mathematical reasoning tasks.,Language Coverage,Experimental Design,low
+The study does not address problems where the answers are neither numerical nor entity-based.,Task and Application Scope,Experimental Design,low
+"The data is sourced from a single counseling platform in China, which may not be representative of other regions.",Task and Application Scope,Experimental Design,low
+"The LLM judges tend to favor longer responses and assign higher scores, introducing a bias that must be addressed.",Bias and Representation,Experimental Design,low
+"The current study does not integrate multimodal models that combine video counseling dialogues, which could be a promising direction for future work.",Task and Application Scope,Methodology,low
+The study could benefit from expanding the data collection to multiple counseling platforms across different regions to achieve a more comprehensive data collection.,Data Coverage,Experimental Design,high
+"The framework relies on the closed-source GPT-4 as an annotator, raising concerns about the transparency and interpretability of the inconsistency detection process.",Annotation Quality,Methodology,low
+The dependence on a proprietary model may limit the framework’s applicability and reproducibility in settings with restricted access.,Task and Application Scope,Methodology,low
+Achieving a balance between consistency and output diversity presents a challenge.,Task and Application Scope,Result Analysis,low
+"Aiming for greater diversity may inadvertently introduce inconsistencies, complicating the framework’s objectives and potentially reducing response quality.",Task and Application Scope,Methodology,low
+The research has not explored the application of EoT beyond multiple-choice questions.,Task and Application Scope,Methodology,high
+The research has not applied the core principles of systematic exclusion to areas such as knowledge graphs and retrieval-augmented generation.,Task and Application Scope,Methodology,high
+Our limited computational resources restrict the number of supported languages to 24.,Computational Resources,Other,high
+"The number of supported languages is fewer than that of M2M, NLLB, and commercial LLMs.",Language Coverage,Experimental Design,high
+Our training data includes fewer samples per translation direction than those used for training NLLB models.,Data Coverage,Experimental Design,high
+The Bridge Language strategy results in fewer supervised translation directions compared to NLLB.,Task and Application Scope,Experimental Design,medium
+MITRE does not incorporate additional engineering strategies like back-translation and distillation.,Language Coverage,Experimental Design,low
+"The use of registers introduces additional computational cost, doubling the number of source tokens.",Computational Resources,Experimental Design,low
+"The training time for models with registers is increased by a factor of 1.34, 1.63, and approximately 1.01 compared to the vanilla decoder-only model, vanilla encoder-decoder model, and the previous state-of-the-art method, respectively.",Task and Application Scope,Methodology,low
+"MITRE has not been evaluated for toxicity or undergone detoxification, limiting its recommended use to research purposes or applications with thorough processing.",Task and Application Scope,Experimental Design,low
+"The predictive rollout search process introduces significant computational overhead, making it potentially impractical for realtime applications.",Computational Resources,Methodology,high
+"The approach particularly relies on tool interactions for stronger capability, which may require more effort in some specific deployment environments.",Task and Application Scope,Other,medium
+"The framework’s effectiveness is constrained by the quality of the base VLM’s reasoning capabilities - while it enhances performance, it cannot overcome fundamental model limitations.",Generalization Scope,Methodology,high
+The evaluation focuses primarily on geometric and spatial reasoning tasks.,Evaluation Design,Experimental Design,high
+"The framework has not been extended to heterogeneous architectures (e.g., cross-family model fusion)",Task and Application Scope,Methodology,high
+The framework has not been extended to multilingual scenarios,Language Coverage,Methodology,high
+There is a lack of standardized benchmarks for evaluating merged models,Evaluation Design,Experimental Design,high
+Balancing safety and utility in multilingual model merging remains underexplored,Language Coverage,Methodology,high
+"LLMs retain historical knowledge obtained from training data, which may cause knowledge leakage when generating ideas.",Security and Privacy,Methodology,high
+"Only the abstract and title are used in the idea generation process, which may result in LLM not being able to understand the technical details in the article and the logic between the articles.",Task and Application Scope,Experimental Design,high
+"The code capabilities of LLMs are not sufficient to understand complex codes such as project-level codes, resulting in DOLPHIN being unable to verify complex tasks currently.",Task and Application Scope,Methodology,high
+The dataset size could be further enhanced by adding irrelevant documents.,Data Coverage,Experimental Design,medium
+"The study does not address the challenge of retrieval from large data sets, which could be considered in future work.",Task and Application Scope,Methodology,medium
+"We heavily rely on the internal states of LLMs, which may be challenging to access in some cases, requiring us to use a proxy model.",Task and Application Scope,Methodology,medium
+"Our framework does not leverage other information produced by LLMs during text generation, such as probability information and the generated text itself.",Task and Application Scope,Methodology,medium
+"Our framework may inherit biases from the language model on certain issues, potentially leading to incorrect judgments.",Bias and Representation,Methodology,high
+"The model relies on hard routing based on MoI, which may not fully account for intermediate cases.",Task and Application Scope,Methodology,medium
+The datasets cover only 10 Bantu languages out of over 500.,Language Coverage,Experimental Design,high
+Expanding to more languages is challenging due to limited digital resources and scarce structured annotations.,Data Coverage,Other,high
+MoI simplifies linguistic variation by focusing solely on noun class prefix statistics.,Task and Application Scope,Methodology,high
+"Some Bantu languages exhibit irregular noun class behavior due to phonological changes, loanwords, or diachronic shifts that MoI does not capture.",Language Coverage,Methodology,high
+"The work did not explore the applicability of MoI to other NLP tasks such as language modeling, parsing, or machine translation.",Task and Application Scope,Experimental Design,high
+"The work focused on Transformer-based models, and the applicability of MoI to other architectures is unknown.",Generalization Scope,Methodology,high
+The findings may not generalize universally to all 500 Bantu languages.,Generalization Scope,Experimental Design,high
+"Rigid typological categorizations could oversimplify linguistic diversity, particularly in languages with irregular noun class behavior or diachronic shifts.",Bias and Representation,Methodology,high
+"One limitation of our approach is a persistent bias in the form of information omissions, leading to incomplete representations of culture and history, particularly in collections related to gender and sexual identity and migration and colonial histories.",Bias and Representation,Experimental Design,high
+The lack of adequate and representative language in the past makes these collections less accessible.,Language Coverage,Experimental Design,high
+The tool cannot fully address the specific form of contentiousness due to its limitations in detecting terms in the metadata.,Task and Application Scope,Methodology,high
+The community work to co-create the vocabulary with marginalized communities could not be applied to the entire vocabulary due to time and budget constraints.,Bias and Representation,Experimental Design,high
+"The tool has high computational requirements, necessitating at least a mid-range GPU, which may limit accessibility for some who lack access to such resources.",Computational Resources,Other,high
+Computational constraints prevented experimentation with larger models that could have potentially enhanced the tool’s performance.,Computational Resources,Methodology,high
+"Scaling up Model Size of ECLM is limited by computational resource constraints, preventing experimentation with models larger than 8 billion parameters.",Computational Resources,Methodology,high
+The current research framework does not utilize advanced strategies of selective data curation.,Data Coverage,Methodology,high
+The current research framework does not utilize intricate prompt engineering.,Prompt and Interaction Design,Methodology,high
+"The current scope of FaithfulRAG is limited to textual inputs and does not yet support multimodal information (e.g., images, audio, or structured data).",Task and Application Scope,Experimental Design,high
+"FaithfulRAG does not currently support extending the framework to incorporate multimodal input, which would enable a more comprehensive assessment of how models navigate and resolve conflicts between heterogeneous knowledge sources.",Task and Application Scope,Methodology,high
+The framework's inability to handle multimodal information limits its ability to detect and reconcile inconsistencies that arise from modality-specific biases or divergent contextual signals.,Data Coverage,Methodology,high
+The lack of multimodal integration limits the framework's applicability to domains where information synthesis from multiple sources is crucial.,Task and Application Scope,Methodology,high
+The level of generated knowledge tuples is still constrained.,Data Coverage,Methodology,high
+Relevant knowledge of “unseen entities” cannot be generated in the current algorithm.,Generalization Scope,Methodology,high
+"The current algorithm is limited to single-image scenarios, whereas multi-image scenarios have greater practical value.",Task and Application Scope,Methodology,high
+The current evaluation platform does not incorporate both single-image tasks and multi-image tasks.,Evaluation Design,Experimental Design,high
+The current methods of pretraining and supervised fine-tuning might not be enough to achieve assistant-level GUI agents.,Task and Application Scope,Methodology,high
+"The current training data only includes website and smartphone environments, which are not enough to build a general GUI agent.",Data Coverage,Experimental Design,high
+The lack of GUI instruction data about computer systems and professional software is a limitation.,Data Coverage,Experimental Design,high
+"Our current framework requires a manual selection of images that match specified concepts, preventing fully automated dataset generation.",Evaluation Design,Experimental Design,high
+The manual verification of automatically generated questions can be a considerable burden.,Annotation Quality,Experimental Design,medium
+LLMs are highly sensitive to the order of answer options in multiple-choice QA tasks.,Evaluation Design,Experimental Design,high
+Shuffling the answer options to mitigate positional bias in model evaluation may not be entirely sufficient.,Evaluation Design,Experimental Design,high
+VLMs often fail to produce consistent predictions when the positions of the answer options are altered.,Evaluation Design,Experimental Design,high
+The dataset captures only a subset of Korean cultural elements.,Bias and Representation,Experimental Design,high
+MC3KD’s training time is approximately 1.6 times that of the original method,Computational Resources,Methodology,high
+The work does not explore the application of the Concordance Correlation Coefficient to increase linear differences among student model layers,Task and Application Scope,Methodology,low
+"The presence of equivalent mutants, which are semantically identical variants of the original program, can evade detection and lead to false positives, undermining the accuracy of completeness metrics.",Evaluation Design,Experimental Design,high
+"Some undetected equivalent mutants may still affect the validity of the results, despite the use of Equivalent Mutant Suppression (EMS) to filter them out.",Evaluation Design,Experimental Design,high
+"The experiments produced a substantial number of ""unknown"" results from the program verification tools, which introduce ambiguity due to inherent limitations in deductive verification tools.",Task and Application Scope,Methodology,high
+"The study focuses only on Java and the Java Modeling Language, and does not generalize to other programming languages such as Python or C.",Generalization Scope,Experimental Design,high
+"The experiments did not include the latest LLMs, OpenAI-o1 and DeepSeekR1, due to resource constraints and university policy.",Computational Resources,Experimental Design,high
+"The use of o3-mini, the latest reasoning model from OpenAI, and open-source DeepSeek-R1 models, may not be representative of the performance of OpenAI-o1 and DeepSeekR1.",Task and Application Scope,Experimental Design,medium
+"Although HACo-Det is already diverse in some aspects, it is not multilingual, hence we did not evaluate the performance of the baselines in other languages and out-of-language detection.",Language Coverage,Experimental Design,high
+"In HACo-Det, to consider situations that are more likely to occur in reality, the human text is polished by only one model, more complex multi-LLM collaboration together with human-LLM interaction should be focused on in future studies such as multi-model.",Task and Application Scope,Methodology,medium
+"In our study, though we obtained some possible improvements applicable to the existing detectors for fine-grained detection via analysis, we do not further focus on proposing a specific outperforming detection method as a solution.",Task and Application Scope,Methodology,medium
+A limited number of prompt designs in our coauthored text generation pipeline are explored.,Prompt and Interaction Design,Experimental Design,high
+IndicSynth contains synthetic speech recordings for only 12 languages.,Language Coverage,Experimental Design,high
+The mimicry subsets for Hindi and Sanskrit are absent in IndicSynth.,Language Coverage,Experimental Design,high
+The dataset can be extended by covering more low-resourced languages and more voice cloning models for dataset creation.,Data Coverage,Experimental Design,high
+The evaluation of IndicSynth was done using sample test sets.,Evaluation Design,Experimental Design,high
+"The naturalness of synthetic speech datasets should be evaluated through a user study, but it was not done due to the challenge of recruiting participants proficient in low-resource languages.",Language Coverage,Experimental Design,high
+The absence of user studies to evaluate human perception of synthetic speech.,Evaluation Design,Experimental Design,high
+The current training data generation process employs a relatively simplistic approach.,Data Coverage,Methodology,high
+"The utilization of 7B or 8B parameter models as generators may not be computationally efficient, and smaller models (1B-2B parameters) could be explored.",Computational Resources,Methodology,high
+The benchmark only covers English datasets due to the limited availability of multilingual retrieval datasets for code information retrieval.,Language Coverage,Experimental Design,high
+"The benchmark mainly focuses on queries that aim to benchmark retrieval performance solely based on textual information, and does not account for multi-faceted search that relies on various corpus meta-data.",Task and Application Scope,Experimental Design,high
+"The benchmark dismisses real-world informational needs where a single query is relevant to multiple corpora, and where the informational needs of a single query can only be satisfied by multiple corpora simultaneously.",Task and Application Scope,Experimental Design,high
+"The benchmark does not include n-ary match or list-wise labels for each query, which would allow for a more diverse range of tasks and informational needs.",Task and Application Scope,Experimental Design,high
+"Our exploration is limited to queries that contain only text, with a focus on extracting information from images.",Task and Application Scope,Experimental Design,high
+"We have not explored expanding the proposed approach to include more types of multimodal data, such as audio and video.",Task and Application Scope,Methodology,medium
+We are constrained by computational resources and have not yet explored larger-sized models.,Computational Resources,Experimental Design,high
+"The explanations do not demonstrate the underlying generation mechanism, which remains a black box.",Task and Application Scope,Methodology,high
+"The method cannot explain the underlying generation mechanism, which is considered an important and challenging problem.",Task and Application Scope,Methodology,high
+"Due to limitations in resources and experimental conditions, not all baseline methods were replicated.",Data Coverage,Experimental Design,medium
+"The experiments relied on referring to the detailed test results from other studies (Zhang et al., 2024 and Li et al., 2024b) in various missing data scenarios.",Evaluation Design,Experimental Design,medium
+"Real-world environments may involve more complex joint missingness, which imposes higher demands on model performance.",Generalization Scope,Experimental Design,high
+P-RMF does not always outperform other methods in some metrics due to the stochastic nature of the missing data noise.,Generalization Scope,Methodology,medium
+The model's performance under different noise levels needs to be balanced and investigated in the future.,Generalization Scope,Experimental Design,medium
+The investigation is limited to widely used QE methods,Task and Application Scope,Experimental Design,high
+The investigation is limited to smaller query token sizes,Evaluation Design,Experimental Design,high
+Computational constraints restrict a comprehensive exploration of ReAL’s full potential,Computational Resources,Other,high
+Our method cannot generalize to unseen entities that were absent during training.,Generalization Scope,Methodology,high
+We focused solely on racial biases using the ambiguity of black and white in Llama 3 models.,Bias and Representation,Experimental Design,high
+"Mechanistic interpretations are inherently influenced by factors such as model architecture, data, the chosen interpretability method, and are limited by human-defined concepts.",Task and Application Scope,Methodology,high
+Amplifying race associations may carry side effects beyond bias metrics examined.,Bias and Representation,Methodology,medium
+Our evaluation covered only a small number of downstream tasks; unintended consequences in other applications remain a possibility.,Task and Application Scope,Experimental Design,high
+"We do not want to anthropomorphize models as the reasons why humans do not see race can involve deeper psychological and strategic motivations, which may not simply relate to the way they interpret color versus race.",Task and Application Scope,Methodology,medium
+The training set has not undergone strict manual verification due to cost considerations.,Annotation Quality,Experimental Design,high
+The quality of the training set can be further improved to potentially lead to better model performance.,Data Coverage,Experimental Design,medium
+"The diversity of the corpora used in the experiments is limited, and increasing linguistic and cultural diversity would help assess the robustness of ProMALex.",Data Coverage,Experimental Design,high
+A higher granularity in labeling legal fields within the systems would contribute to a more nuanced understanding of jurisdictional differences.,Data Coverage,Experimental Design,medium
+"The term ""jurisdiction"" is used in a broad sense, and incorporating state-specific variations within a country could provide further granularity.",Task and Application Scope,Experimental Design,medium
+"The analysis only used GPT-2 as the baseline model, and future work could extend this to other models to investigate the effects of memorization in pretraining data.",Evaluation Design,Experimental Design,high
+ProMALex has not been evaluated on open-ended generation tasks where the model would need to generate legal text that adheres to specific jurisdictional requirements.,Task and Application Scope,Experimental Design,high
+"The use of sensitive data requires careful consideration of privacy, fairness, and ethical implications.",Security and Privacy,Other,high
+"Large language models can reinforce stereotypical patterns embedded in historical data, perpetuating harmful societal stereotypes.",Bias and Representation,Methodology,high
+"LLMs trained on biased data risk inadvertently amplifying these biases, undermining fairness and inclusivity in legal decision-making.",Bias and Representation,Experimental Design,high
+"LLMs may generate plausible-sounding but factually incorrect or legally inaccurate outputs, leading to considerable harm.",Bias and Representation,Methodology,high
+"Biases in the underlying data may cause models to perform poorly for certain groups or jurisdictions, leading to inequitable outcomes.",Bias and Representation,Experimental Design,high
+"Models may struggle with low-resource legal systems or fail to account for the distinct legal frameworks of different jurisdictions, resulting in inequitable outcomes.",Task and Application Scope,Methodology,medium
+Our paradigm relies heavily on the high performance of the SLM.,Task and Application Scope,Methodology,medium
+"If an SLM does not perform well or fails to produce effective domain-specific representations, the knowledge transferred to the LLM may be suboptimal, leading to limited performance gains.",Generalization Scope,Methodology,medium
+Our work focuses exclusively on the text matching task and does not explore its applicability to text generation tasks.,Task and Application Scope,Experimental Design,high
+"Extending this paradigm to generation tasks, such as summarization or dialogue systems, would require additional considerations, including how knowledge alignment can influence text fluency and creativity.",Task and Application Scope,Methodology,medium
+The Dual Evaluation Framework requires dual-format question content to capture linguistic and cultural nuances for meaningful cross-cultural comparisons.,Language Coverage,Methodology,high
+The current experimental design only focuses on a single cultural context for each language.,Language Coverage,Experimental Design,high
+The framework does not incorporate varied cultural contexts for languages used in diverse regions.,Language Coverage,Experimental Design,high
+The probing validation is limited to specific models like Qwen2.5-7B-Instruction and Llama-3-8BInstruction due to time and computational cost constraints.,Computational Resources,Experimental Design,medium
+"The study does not include larger models with more parameters, which could provide deeper insights into multilingual and cross-cultural model behavior.",Prompt and Interaction Design,Experimental Design,medium
+The model is limited in cases where sockpuppet contributions contain little or no message data.,Data Coverage,Methodology,medium
+The approach was trained solely on malicious examples of sockpuppetry and may not be able to distinguish between malicious and benign sockpuppet-groups.,Generalization Scope,Experimental Design,high
+The approach may not be robust to authorship obfuscation using generative models.,Generalization Scope,Methodology,high
+The approach is unable to replace human-led sockpuppet investigations due to the potential for incorrect classifications.,Task and Application Scope,Other,high
+The precision of the approach must improve further for it to occupy a larger role in investigations.,Generalization Scope,Result Analysis,medium
+"There is a valid concern for privacy when releasing the dataset, as usernames may be used to represent a person's real identity or contain personally identifiable information.",Security and Privacy,Other,high
+The evaluation of diversity lacks agreement on universally accepted metrics.,Evaluation Design,Experimental Design,medium
+The study only employed a subset of diversity-related evaluation methods.,Evaluation Design,Experimental Design,high
+The assessment of diversity may not fully capture all aspects of the concept.,Evaluation Design,Experimental Design,medium
+Evaluating the correctness of generated data remains a challenging task.,Evaluation Design,Methodology,high
+"Human evaluation and model-assisted evaluation have their own limitations, such as potential biases in LLMs' training corpus or humans' knowledge.",Bias and Representation,Experimental Design,high
+"The approach used for evaluation has inherent constraints, such as the inability to fully capture nuanced correctness in certain contexts.",Evaluation Design,Experimental Design,high
+"The quality and characteristics of generated samples are influenced by multiple factors, including generation temperature, choice of prompts, and specific LLMs used.",Prompt and Interaction Design,Experimental Design,high
+"The study only explored two different settings for each generation factor, which may have impacted the diversity and quality of the generated samples.",Data Coverage,Experimental Design,high
+The evaluation was primarily focused on sentence classification tasks and did not extend to more general tasks.,Task and Application Scope,Experimental Design,high
+"The datasets used in the study concentrated on English corpora, with only one multilingual dataset considered.",Language Coverage,Experimental Design,high
+The study did not explore multimodality scenarios.,Task and Application Scope,Experimental Design,high
+LLMs may amplify demographic biases from their training data.,Bias and Representation,Methodology,high
+Generation hallucinations may produce plausible but factually incorrect content.,Generalization Scope,Methodology,high
+"Task models trained on flawed data may have degraded reliability and accuracy, especially in high-stakes domains.",Data Coverage,Methodology,high
+There is a possibility of generating a minimal amount of hallucinated data.,Data Coverage,Methodology,medium
+CoreEval is applied only to classification tasks.,Task and Application Scope,Experimental Design,high
+The possibility of introducing references to relevant individuals or events while updating the data exists.,Security and Privacy,Experimental Design,low
+"Our research focuses on textual tasks, and it is unclear whether the method will be effective in the multimodal domain.",Generalization Scope,Methodology,high
+"There is notable performance variation across different task categories, suggesting challenges in cross-task generalization for automatic prompt optimization.",Generalization Scope,Experimental Design,high
+We leave further explorations to improve the faithfulness for future work.,Task and Application Scope,Methodology,low
+Our dataset does not cover all possible vulnerable scenarios.,Data Coverage,Experimental Design,high
+This study does not investigate the severity of the resulting consequences of LLM agent unfaithfulness.,Task and Application Scope,Experimental Design,medium
+We can only validate our method on open-source models.,Data Coverage,Experimental Design,medium
+We are unable to test its effectiveness on the current state-of-the-art GPT series models due to accessibility constraints.,Data Coverage,Experimental Design,high
+"The experiments require substantial GPU computational resources, raising concerns about energy consumption and environmental sustainability.",Computational Resources,Other,high
+TableLoRA cannot match the results achieved through full finetuning.,Task and Application Scope,Methodology,high
+Potential bias may still be present in the datasets sourced from the Internet.,Bias and Representation,Experimental Design,high
+The process involving the LLMs may inadvertently introduce inappropriate information into the evolved data.,Security and Privacy,Methodology,medium
+The use of multi-round iterative synthetic data requires further exploration,Task and Application Scope,Methodology,medium
+Further enhancement of the diversity of the synthetic data is needed,Data Coverage,Experimental Design,medium
+The hallucinations produced by LLMs in synthetic data could become a potential risk,Data Coverage,Experimental Design,medium
+Limited training data for low-resource languages,Data Coverage,Experimental Design,high
+Computational cost associated with generating and processing multilingual critique data,Computational Resources,Methodology,high
+Biases embedded in the data that can reinforce stereotypes or present inaccurate portrayals of certain cultures,Bias and Representation,Experimental Design,high
+Potential to marginalize underrepresented voices or misrepresent diverse communities due to biases in the data,Bias and Representation,Experimental Design,high
+"The system relies on segmentation as a core component, and any inaccuracies in the segmentation process may result in imperfect or incomplete attributions.",Task and Application Scope,Methodology,medium
+"The approach primarily focuses on visual chart elements, such as bars, points, or sectors, and does not account for textual components like captions, labels, or titles.",Task and Application Scope,Methodology,high
+The model is not yet scaled to sizes larger than three times the parameters.,Prompt and Interaction Design,Methodology,medium
+"Increasing the number of layers significantly requires expanding the matrix size of each layer, which requires width scaling-up.",Computational Resources,Methodology,medium
+The research on LESA on MoE model is limited by the challenges of constructing routers for the predicted layers.,Task and Application Scope,Methodology,medium
+The research on LESA on MoE model is limited by the current large size of MoE models.,Task and Application Scope,Methodology,medium
+We do not carry out very complete experiments for MINIMA while LLaMA3 grants a larger model at even 400B scale,Data Coverage,Experimental Design,medium
+"We do not consider data scale, data mixture, and distillation techniques as core scaling factors",Data Coverage,Experimental Design,medium
+We do not combine a preference optimization stage for MINICHAT while approaches like DPO can principally alleviate the safety concerns and lift the user experiences,Task and Application Scope,Experimental Design,medium
+Potential for non-factual generation such as unqualified advice,Task and Application Scope,Methodology,high
+Propensity towards hallucinations,Task and Application Scope,Methodology,high
+"May generate harmful, offensive, or biased content due to its training on publicly available online datasets",Bias and Representation,Experimental Design,high
+Could potentially be used for nefarious purposes such as generating misinformation,Security and Privacy,Other,high
+"The current training paradigm of WhiSPA predominantly aligns with psychological features derived from text, potentially limiting its capacity to capture critical acoustic information.",Task and Application Scope,Methodology,high
+The lexical bias of WhiSPA raises a question about the extent to which its embeddings can be refined to incorporate affective context for psychological prediction.,Generalization Scope,Methodology,medium
+"The strong alignment with text-based language models may introduce an imbalance, diminishing the richness of acoustic cues valuable for affective and psychological assessments.",Generalization Scope,Methodology,medium
+"WhiSPA's representational capacity can be enhanced by preserving acoustic features, which is currently not fully utilized.",Generalization Scope,Methodology,medium
+The model's reliance on textual representations may limit its efficacy in psychological modeling and versatility for general-purpose speech tasks.,Task and Application Scope,Methodology,medium
+"REP requires additional training steps to learn the adapter parameters, introducing computational overhead compared to direct editing methods.",Computational Resources,Methodology,medium
+The effectiveness of REP in scenarios involving multiple interrelated facts or continuous editing remains to be investigated.,Task and Application Scope,Experimental Design,medium
+REP does not apply to model editing methods other than locate-and-edit methods.,Task and Application Scope,Methodology,high
+The framework operates as a plugin for existing large language models (LLMs) rather than training LLMs specifically for the task.,Task and Application Scope,Methodology,medium
+The performance of K-MSE is inherently constrained by the capabilities of the underlying LLM.,Task and Application Scope,Methodology,medium
+The scarcity of reliable and publicly available molecular spectral data hinders the development of more specialized models.,Data Coverage,Experimental Design,high
+The evaluation of K-MSE is currently limited to the MolPuzzle benchmark.,Task and Application Scope,Experimental Design,high
+"The MolPuzzle benchmark has a limited scale and diversity, which may not fully capture the complexity of real-world molecular structure elucidation tasks.",Data Coverage,Experimental Design,high
+Our annotations and experiments are limited in terms of prompting techniques.,Prompt and Interaction Design,Experimental Design,high
+Our annotations and experiments are limited in terms of LLMs we experimented with.,Task and Application Scope,Experimental Design,high
+Our annotations and experiments are limited in terms of languages we annotated.,Language Coverage,Experimental Design,high
+Fine-tuned factuality evaluators for non-English languages may not work as well as those for English.,Language Coverage,Experimental Design,high
+Methods that approximate factuality through entailment tasks (e.g. XNLI dataset) are inferior to multi-task training and distillation and data augmentation from LLMs.,Task and Application Scope,Methodology,high
+"The questions across languages are not parallel, which could introduce different complexities across language test data.",Data Coverage,Experimental Design,high
+The data collected presents different challenges that may not be balanced.,Data Coverage,Experimental Design,high
+Balancing the challenges and complexities by collecting data for specific phenomena is not straightforward.,Data Coverage,Experimental Design,high
+Controlling for answer complexity is a challenging problem because the answer side is model-generated.,Evaluation Design,Experimental Design,medium
+This paper does not address reasoning stages such as chain-of-thought.,Task and Application Scope,Methodology,high
+"The scale of the proposed HC-M3D dataset is relatively small, consisting of only 1,851 samples, due to the high cost and time-consuming nature of manual annotation.",Data Coverage,Experimental Design,high
+"Integrating multiple visual experts offers little benefit (and in some cases, even negative impact) when applied to mathematical reasoning evaluation.",Generalization Scope,Experimental Design,medium
+The annotation results will be affected by the personal understanding from the annotators and GPT-4o.,Annotation Quality,Experimental Design,high
+The annotators need to basically know the story of the books.,Annotation Quality,Experimental Design,high
+"The benchmark only includes the ToM dimensions of belief, intention, emotion and desire, and does not cover other ToM dimensions such as knowledge and thoughts.",Evaluation Design,Experimental Design,high
+The evaluation protocol using GPT-4o can be costly if the dataset is very large or the stories are excessively long.,Computational Resources,Other,high
+"The benchmark is derived from classic novels, which may have limitations of the time.",Bias and Representation,Experimental Design,medium
+"The notes written by users reflect their personal interpretation of the story, which may contain content expressing negative emotions.",Bias and Representation,Experimental Design,medium
+Limitations in Model Size: the work only experimented and evaluated S2R on smaller LLMs (up to 8B parameters) and did not explore larger models,Prompt and Interaction Design,Methodology,high
+"Limitations in Discussion of More Recent Work: the discussion only included a limited number of recent works (Eurus-2-7B-PRIME, rStar-Math-7B, Qwen2.5-7B-SimpleRL, and QwQ-32B-Preview) and did not cover other recent efforts, such as the Deepseek R1 series",Evaluation Design,Literature Review,high
+The paper does not focus on fine-tuning single-agent problem-solving techniques.,Task and Application Scope,Methodology,medium
+The effectiveness of the collaboration framework can be further validated in a more refined single-agent problem-solving setting.,Task and Application Scope,Experimental Design,medium
+The increased number of models can lead to significant computational resource consumption.,Computational Resources,Other,high
+The reliance on natural language processing can lead to significant computational resource and time consumption.,Computational Resources,Methodology,high
+The experiments were conducted exclusively on ladder diagrams.,Task and Application Scope,Experimental Design,high
+The dataset cannot be publicly released due to strict confidentiality constraints.,Data Coverage,Experimental Design,high
+"The need for a publicly available VPL-based benchmark is acknowledged, which is left as future work.",Data Coverage,Other,high
+The methodology has not been extended to other visual programming languages (VPLs) beyond ladder diagrams.,Task and Application Scope,Methodology,high
+"The framework assumes that the final verdicts and reasoning steps arise when consuming the input text and do not exist on their own, which is subject to philosophical discussion.",Task and Application Scope,Methodology,medium
+The findings on the factors that shape human text assessment are limited to the biomedical domain.,Generalization Scope,Experimental Design,high
+Some topical bias is inevitable in the data collection to ensure relevance to the annotators' expertise.,Bias and Representation,Experimental Design,medium
+The given sample of papers and the annotator pool might still introduce a certain level of bias to the dataset.,Bias and Representation,Experimental Design,high
+"The collected dataset is not suitable for comparing behavioral patterns between groups, e.g. by varying levels of experience.",Data Coverage,Experimental Design,medium
+The automatic metrics used to evaluate LLMs as assistants for structured reasoning might not cover all aspects of a suitable answer in the workflow.,Evaluation Design,Experimental Design,high
+The human baseline is a conservative estimate of true human performance.,Generalization Scope,Experimental Design,medium
+"The study relies on a small-scale user study to validate that STRICTA-based assistance is practically useful, and more large-scale, dedicated user studies and performance metrics are needed.",Data Coverage,Experimental Design,high
+The investigation of how LLMs and humans interact in real-world paper assessment scenarios is an important direction for future research.,Task and Application Scope,Experimental Design,high
+The dataset consists of LLM-generated news-related comments created by the authors rather than actual LLM-generated content posted online.,Data Coverage,Experimental Design,high
+"Real-world scenarios might involve more advanced techniques and incorporate human feedback, potentially resulting in more sophisticated content.",Task and Application Scope,Methodology,medium
+The English version of XDAC was evaluated on a relatively limited set and would require more extensive validation.,Data Coverage,Experimental Design,medium
+The English and other language applications of XDAC require more thorough verification with larger-scale data and diverse evaluation settings.,Language Coverage,Experimental Design,high
+"The characteristics of news comments may differ significantly from other types of online discourse, suggesting the need for more comprehensive cross-domain validation.",Generalization Scope,Experimental Design,high
+"The experiments did not exhaustively optimize hyperparameters or conduct extensive ablation studies, which might yield better performance.",Inference and Efficiency,Experimental Design,medium
+"The real-world analysis was conducted over a specific time frame (Jan. 2023 to Aug. 2024), which may not capture the full spectrum of LLM advancements and their impacts on online discourse.",Data Coverage,Experimental Design,medium
+CENTAUR cannot directly achieve theoretical security due to its privacy-preserving mechanism based on random permutation.,Security and Privacy,Methodology,high
+"Traditional provable security techniques, such as SMPC and homomorphic encryption, are impractical for large models due to their high communication and computational costs.",Computational Resources,Methodology,high
+Privacy and usability are often incompatible in practical applications.,Security and Privacy,Other,medium
+"We only consider a single platform in our study, and do not compare AutoMod to any other deployed text moderation.",Task and Application Scope,Experimental Design,high
+"We largely investigate both hateful and benign messages in a non-conversational context, i.e., messages are passed one-by-one without any simulation of dialogue.",Task and Application Scope,Experimental Design,high
+Our study is focused entirely on text in English.,Language Coverage,Experimental Design,high
+More work is needed to curate datasets of dialogue that contain both hateful and benign content.,Data Coverage,Experimental Design,high
+Investigating in-group/out-group dynamics may uncover differential treatment and moderation of content based on group affiliations.,Bias and Representation,Experimental Design,medium
+"Mismatched difficulty levels: Native language & literature subset contained both literature and language questions in some languages, while it contained only language questions in others.",Data Coverage,Experimental Design,high
+"Mismatched difficulty levels: the history subset contained both world and national history questions in some languages, while it contained only national questions in others.",Data Coverage,Experimental Design,high
+"Maths questions in Kazakh are at middle-school level, which results in very high scores.",Data Coverage,Experimental Design,high
+"Missing major languages: TUMLU does not include some major Turkic languages, such as Turkmen, Kyrgyz and Bashkir.",Language Coverage,Experimental Design,high
+The approach does not explore continual pretraining approaches and it is unclear whether these approaches can further enhance the converted text encoder.,Task and Application Scope,Methodology,medium
+Comprehensive validation across a broader range of domains is needed to further establish the approach's generalizability and robustness.,Generalization Scope,Experimental Design,high
+The optimal number of conversion layers (k and k0) varies across different datasets and is non-trivial to determine.,Task and Application Scope,Methodology,medium
+Developing efficient approaches to select the optimal k and k0 values for a given task is needed.,Task and Application Scope,Methodology,medium
+The analysis is limited to the statistical level and does not support or negate experiment results from single settings or benchmarks.,Evaluation Design,Result Analysis,high
+The model size cannot be scaled further because Pythia and OLMo only provide model sizes up to 12b and 13b.,Prompt and Interaction Design,Experimental Design,high
+"Only very few LLMs have released their pre-train data, and the pre-train data is different, making it hard to conduct experiments on more models.",Data Coverage,Experimental Design,high
+The test size and valid data limited the experiment scale.,Data Coverage,Experimental Design,high
+Further samplings would exhaust the texts and no longer satisfy the experiment requirements of having different sampled members and non-members each time.,Data Coverage,Experimental Design,high
+The self-developed algorithm used to evaluate open-ended model responses causes some degree of noise.,Evaluation Design,Methodology,high
+A full human evaluation for the dataset is not feasible.,Evaluation Design,Experimental Design,high
+Using LLM as a judge would be too resource-intensive and not fully reliable.,Computational Resources,Experimental Design,high
+"The robustness checks are only conducted on a subset of the dataset, which may lead to larger true uncertainties around the results.",Data Coverage,Experimental Design,medium
+There is no precise information about the pretraining data of the evaluated models.,Data Coverage,Experimental Design,medium
+"Model perplexity is used as a proxy for the frequency of a term's occurrence in the training data, which is not fully reliable and may introduce inaccuracies.",Evaluation Design,Methodology,medium
+"GEOTEMP does not cover purely location-based tasks, as they may not significantly advance the field and are less conducive to leveraging temporal information.",Task and Application Scope,Experimental Design,medium
+"The study lacks a complete picture of other factors that influence disagreement, such as annotators' personal background and preferences regarding moral foundations and human values.",Annotation Quality,Experimental Design,medium
+"More analysis is needed on the relationship between individual human uncertainty and uncertainty as disagreement, which requires more data collection.",Data Coverage,Experimental Design,medium
+"The study is limited to English language datasets, and there is a lack of resources of texts annotated with morality and values in other languages, especially from non-WEIRD countries.",Language Coverage,Experimental Design,high
+The paper only focuses on two model architectures (RoBERTa and flan-t5) and more model architectures should be investigated to see how their patterns in uncertainty differ.,Task and Application Scope,Methodology,medium
+"More approaches to calibrate models on human disagreement need to be explored, such as different prompting strategies or a reinforcement learning stage.",Task and Application Scope,Methodology,medium
+A robust method to extract uncertainty from LLMs needs to be developed.,Task and Application Scope,Methodology,medium
+LLMs need to be calibrated more to human label variation.,Annotation Quality,Experimental Design,medium
+More methods and LLMs need to be evaluated to maximize and fully evaluate their effectiveness in calibrating to human label variation.,Evaluation Design,Experimental Design,high
+"In dataset construction, the answer words were limited to only nouns and adjectives, excluding verbs.",Data Coverage,Experimental Design,high
+"The focus was solely on suffix additions in the punchline, ignoring other possible approaches such as prefix additions or fill-in-the-blank methods.",Task and Application Scope,Experimental Design,high
+"All puns were manually crafted in English, which may not be representative of puns in other languages.",Language Coverage,Experimental Design,high
+"The ability of LLMs to comprehend and generate puns may differ across languages, as puns in languages other than English might have distinct definitions, structures, or purposes.",Language Coverage,Methodology,high
+The work is based on a contaminated subset of web-mined puns.,Data Coverage,Experimental Design,high
+The CUE method's dependence on labeled data may be a limitation.,Data Coverage,Methodology,high
+The CUE method's generalization ability across different data domains and target models may be a limitation.,Generalization Scope,Methodology,high
+The effectiveness of the CUE method on black-box models has not been demonstrated through experiments.,Task and Application Scope,Experimental Design,high
+ModPlural does not specifically include health-related aspects,Task and Application Scope,Experimental Design,medium
+VITAL does not encompass all principles and values,Task and Application Scope,Experimental Design,medium
+The current benchmark has a limited range of perspectives,Data Coverage,Experimental Design,medium
+The benchmark is not comprehensive due to the smaller number of samples,Data Coverage,Experimental Design,medium

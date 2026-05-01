@@ -1,0 +1,13 @@
+{
+  "your_taxonomy": {
+    "coverage_%": 100.0,
+    "uncategorizable_count": 0,
+    "total": 500
+  },
+  "limitgen_taxonomy": {
+    "coverage_%": 95.6,
+    "uncategorizable_count": 22,
+    "total": 500
+  },
+  "limitgen_paper_oos_%": 36
+}

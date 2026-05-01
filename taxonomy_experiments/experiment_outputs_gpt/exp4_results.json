@@ -1,0 +1,33 @@
+{
+  "Your Taxonomy": {
+    "mean_intra_similarity": 0.2659,
+    "mean_inter_similarity": 0.5915,
+    "mean_inter_separation": 0.4085,
+    "silhouette_score": -0.0129,
+    "per_category_intra": {
+      "Annotation Quality": 0.3349,
+      "Bias and Representation": 0.3108,
+      "Computational Resources": 0.2748,
+      "Data Coverage": 0.2119,
+      "Evaluation Design": 0.2462,
+      "Generalization Scope": 0.2038,
+      "Inference and Efficiency": 0.3234,
+      "Language Coverage": 0.3192,
+      "Prompt and Interaction Design": 0.259,
+      "Security and Privacy": 0.2605,
+      "Task and Application Scope": 0.1809
+    }
+  },
+  "LIMITGEN": {
+    "mean_intra_similarity": 0.2169,
+    "mean_inter_similarity": 0.5703,
+    "mean_inter_separation": 0.4297,
+    "silhouette_score": -0.0365,
+    "per_category_intra": {
+      "Experimental Design": 0.1976,
+      "Literature Review": null,
+      "Methodology": 0.1874,
+      "Result Analysis": 0.2657
+    }
+  }
+}

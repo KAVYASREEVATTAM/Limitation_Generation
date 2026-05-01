@@ -1,0 +1,123 @@
+{
+  "scorer": "GPT judge",
+  "scoring_method": "soft_continuous_no_threshold",
+  "your_taxonomy": {
+    "mean_recall": 0.3636,
+    "mean_precision": 0.24,
+    "mean_jaccard": 0.1712
+  },
+  "limitgen": {
+    "mean_recall": 0.3,
+    "mean_precision": 0.22,
+    "mean_jaccard": 0.1462
+  },
+  "your_per_category": [
+    {
+      "category": "Evaluation Design",
+      "n_ground_truth": 36,
+      "recall": 0.4,
+      "precision": 0.28,
+      "jaccard": 0.1972
+    },
+    {
+      "category": "Computational Resources",
+      "n_ground_truth": 32,
+      "recall": 0.4,
+      "precision": 0.32,
+      "jaccard": 0.2162
+    },
+    {
+      "category": "Language Coverage",
+      "n_ground_truth": 53,
+      "recall": 0.4,
+      "precision": 0.36,
+      "jaccard": 0.2338
+    },
+    {
+      "category": "Generalization Scope",
+      "n_ground_truth": 44,
+      "recall": 0.2,
+      "precision": 0.16,
+      "jaccard": 0.0976
+    },
+    {
+      "category": "Task and Application Scope",
+      "n_ground_truth": 155,
+      "recall": 0.2,
+      "precision": 0.12,
+      "jaccard": 0.0811
+    },
+    {
+      "category": "Prompt and Interaction Design",
+      "n_ground_truth": 14,
+      "recall": 0.4,
+      "precision": 0.2,
+      "jaccard": 0.1538
+    },
+    {
+      "category": "Bias and Representation",
+      "n_ground_truth": 47,
+      "recall": 0.6,
+      "precision": 0.4,
+      "jaccard": 0.3158
+    },
+    {
+      "category": "Annotation Quality",
+      "n_ground_truth": 16,
+      "recall": 0.4,
+      "precision": 0.24,
+      "jaccard": 0.1765
+    },
+    {
+      "category": "Data Coverage",
+      "n_ground_truth": 82,
+      "recall": 0.4,
+      "precision": 0.24,
+      "jaccard": 0.1765
+    },
+    {
+      "category": "Security and Privacy",
+      "n_ground_truth": 15,
+      "recall": 0.2,
+      "precision": 0.12,
+      "jaccard": 0.0811
+    },
+    {
+      "category": "Inference and Efficiency",
+      "n_ground_truth": 6,
+      "recall": 0.4,
+      "precision": 0.2,
+      "jaccard": 0.1538
+    }
+  ],
+  "limitgen_per_aspect": [
+    {
+      "category": "Methodology",
+      "n_ground_truth": 181,
+      "recall": 0.4,
+      "precision": 0.32,
+      "jaccard": 0.2162
+    },
+    {
+      "category": "Experimental Design",
+      "n_ground_truth": 284,
+      "recall": 0.2,
+      "precision": 0.12,
+      "jaccard": 0.0811
+    },
+    {
+      "category": "Result Analysis",
+      "n_ground_truth": 12,
+      "recall": 0.2,
+      "precision": 0.2,
+      "jaccard": 0.1111
+    },
+    {
+      "category": "Literature Review",
+      "n_ground_truth": 1,
+      "recall": 0.4,
+      "precision": 0.24,
+      "jaccard": 0.1765
+    }
+  ]
+}
