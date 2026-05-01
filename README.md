@@ -1,5 +1,5 @@
 # Limitation_Generation
-# LLM Limitations Taxonomy — Dataset, Pipeline & Experiments Documentation
+# LLM Limitations Taxonomy — Dataset, Pipeline & Experiments 
 
 
 This project builds and evaluates an automated **two-level taxonomy of research limitations** stated in NLP/LLM papers. The project has two components:
