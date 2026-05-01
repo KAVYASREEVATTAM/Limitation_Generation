@@ -9,7 +9,7 @@ This project builds and evaluates an automated **two-level taxonomy of research 
 2. **Experiments** (`taxonomy_experiments.py`): Evaluates the custom taxonomy against **LIMITGEN** — a four-aspect taxonomy from the literature — across four complementary experiments using a dataset of 500 annotated limitation sentences. Experiments measure coverage, distribution balance, generative quality via a GPT judge, and embedding-based cluster coherence.
 
 
-Part 1: Taxonomy Pipeline
+## Part 1: Taxonomy Pipeline
 
 ### Input: `cleaned_limitations.csv`
 
@@ -34,6 +34,7 @@ pip install openai numpy pandas scipy scikit-learn tqdm
 
 ```bash
 export OPENAI_API_KEY="your-key-here"
+```
 
 #### Pipeline Steps
 
@@ -67,7 +68,7 @@ A taxonomy auditor prompt reviews the full taxonomy for three classes of issues:
 Each of the 3,000 rows is assigned a fine label within its coarse category. GPT receives the sentence, the coarse label, and all fine label options with their decision rules and not-clauses, and returns the single best match.
 
 
-Output Artifacts
+### Output 
 limitations_annotated.csv: The fully annotated dataset mapping each of the 3,000 rows to its coarse_label and fine_label.  
 
 taxonomy_coarse_fine.json: The authoritative JSON reference for the taxonomy's definitions, decision rules, example sentences, and cluster counts.  
@@ -106,8 +107,7 @@ python taxonomy_experiments.py \
   --model gpt-4o-mini \
   --out experiment_outputs \
   --sample_size 30
-
-
+```
 
 ### Experiments
 
