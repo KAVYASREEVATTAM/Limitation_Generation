@@ -4,9 +4,9 @@
 
 This project builds and evaluates an automated **two-level taxonomy of research limitations** stated in NLP/LLM papers. The project has two components:
 
-1. **Pipeline** (`limitation_taxonomy.py`): Starting from a cleaned set of 3,000 extracted limitation sentences, the pipeline uses GPT-based models to label, cluster, and hierarchically organize every limitation into a structured coarse-to-fine taxonomy (11 coarse categories, 36 fine labels). The result is a reproducible, richly annotated dataset useful for meta-research, bias auditing, and systematic review of LLM research.
+1. **Pipeline** (`limitation_taxonomy.py`): Starting from a cleaned set of 3,000 extracted limitation sentences, the pipeline uses GPT-based models to label, cluster, and hierarchically organize every limitation into a structured coarse-to-fine taxonomy (11 coarse categories, 36 fine labels).
 
-2. **Experiments** (`taxonomy_experiments.py`): Evaluates the custom taxonomy against **LIMITGEN** — a four-aspect taxonomy from the literature — across four complementary experiments using a shared dataset of 500 annotated limitation sentences. Experiments measure coverage, distribution balance, generative quality via a GPT judge, and embedding-based cluster coherence.
+2. **Experiments** (`taxonomy_experiments.py`): Evaluates the custom taxonomy against **LIMITGEN** — a four-aspect taxonomy from the literature — across four complementary experiments using a dataset of 500 annotated limitation sentences. Experiments measure coverage, distribution balance, generative quality via a GPT judge, and embedding-based cluster coherence.
 
 
 Part 1: Taxonomy Pipeline
